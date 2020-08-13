@@ -1,8 +1,14 @@
 <label>Server name</label>
-<input 
+<!-- <input 
     type="text" 
     class="form-control" 
     (input)="onUpdateServerName($event)"
+/> -->
+
+<input 
+    type="text" 
+    class="form-control" 
+    [(ngModel)]="serverName"
 />
 
 {{serverName}}
